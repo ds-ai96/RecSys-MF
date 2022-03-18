@@ -4,14 +4,14 @@ class MF():
     
     def __init__(self, R, K, alpha, beta, iterations):
         """
-        MF class perform to predict empty entries in a rating matrix.
+        등급 행렬의 빈 부분을 예측하기 위해서 MF을 수행함
 
         Args:
-            R (DataFrame): user-item rating matrix
-            K (int): number of latent dimensions
-            alpha (float): learning rate (gamma : in paper)
-            beta (float): regularization paramate (lambda : in paper)
-            iterations (int): number of iterations
+            R (DataFrame): 사용자-아이템 등급 행렬
+            K (int): 잠재 공간의 차원 수
+            alpha (float): 학습률 (gamma : in paper)
+            beta (float): 규제화 파라미터 (lambda : in paper)
+            iterations (int): 반복 횟수
         """
         
         self.R = np.array(R)

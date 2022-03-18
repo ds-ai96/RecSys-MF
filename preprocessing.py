@@ -5,7 +5,7 @@ from sklearn.utils import shuffle
 
 class Rating_Matrix():
     
-    def __init__(self, file_path, train_size = 0.8, missing_value=0.0):
+    def __init__(self, file_path, missing_value=0.0):
         """
         MF 모델 사용을 위한 MovieLens 1M 데이터셋으로 rating matrix을 생성한다.
 
@@ -16,7 +16,6 @@ class Rating_Matrix():
         """
         
         self.file_path = file_path
-        self.train_size = train_size
         self.missing_value = missing_value
         
     def preprocessing(self):
